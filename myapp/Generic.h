@@ -11,8 +11,6 @@
 @interface Generic : NSObject{
    
 }
-@property NSString *myString;
-
-
-
+@property NSString *mystring1;
+@property NSString *mystring2;
 @end
