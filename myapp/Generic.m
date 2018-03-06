@@ -10,6 +10,6 @@
 
 @implementation Generic
 
-@synthesize description = _description;
+@synthesize description;
 
 @end
