@@ -13,7 +13,7 @@
 @interface ListViewControler : UITableViewController <UITableViewDelegate, UITableViewDataSource> {
     
 }
-
+@property (nonatomic,strong) NSMutableArray *tableData;
 
 //- (IBAction)logout:(id)sender;
 

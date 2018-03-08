@@ -16,6 +16,7 @@
 		A7208BAC2046CACB0063F421 /* myappTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A7208BAB2046CACB0063F421 /* myappTests.m */; };
 		A7208BB72046CACB0063F421 /* myappUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A7208BB62046CACB0063F421 /* myappUITests.m */; };
 		A7208BC82046E3110063F421 /* Logo_TV_2015.png in Resources */ = {isa = PBXBuildFile; fileRef = A7208BC72046E3110063F421 /* Logo_TV_2015.png */; };
+		A75D40572050690400CDCD73 /* GenericTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A75D40562050690400CDCD73 /* GenericTableViewCell.m */; };
 		A7ECD738204821D700A7249B /* ListViewControler.m in Sources */ = {isa = PBXBuildFile; fileRef = A7ECD737204821D700A7249B /* ListViewControler.m */; };
 		A7F05FD52049C9AE00D2D602 /* Generic.m in Sources */ = {isa = PBXBuildFile; fileRef = A7F05FD42049C9AE00D2D602 /* Generic.m */; };
 		EC0D3F56527C1E7B99A13219 /* libPods-myapp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FD687A351DDD0F88DB730FE5 /* libPods-myapp.a */; };
@@ -58,6 +59,8 @@
 		A7208BB62046CACB0063F421 /* myappUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = myappUITests.m; sourceTree = "<group>"; };
 		A7208BB82046CACB0063F421 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A7208BC72046E3110063F421 /* Logo_TV_2015.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Logo_TV_2015.png; sourceTree = "<group>"; };
+		A75D40552050298500CDCD73 /* GenericTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GenericTableViewCell.h; sourceTree = "<group>"; };
+		A75D40562050690400CDCD73 /* GenericTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GenericTableViewCell.m; sourceTree = "<group>"; };
 		A7ECD736204821D700A7249B /* ListViewControler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ListViewControler.h; sourceTree = "<group>"; };
 		A7ECD737204821D700A7249B /* ListViewControler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ListViewControler.m; sourceTree = "<group>"; };
 		A7F05FD32049C9AE00D2D602 /* Generic.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Generic.h; sourceTree = "<group>"; };
@@ -124,20 +127,16 @@
 		A7208B912046CACB0063F421 /* myapp */ = {
 			isa = PBXGroup;
 			children = (
+				A75D40542050288700CDCD73 /* models */,
+				A75D40532050283D00CDCD73 /* views */,
 				A7208BC62046E2CD0063F421 /* Supporting Files */,
 				A7208B922046CACB0063F421 /* AppDelegate.h */,
 				A7208B932046CACB0063F421 /* AppDelegate.m */,
-				A7208B952046CACB0063F421 /* ViewController.h */,
-				A7208B962046CACB0063F421 /* ViewController.m */,
 				A7208B982046CACB0063F421 /* Main.storyboard */,
 				A7208B9B2046CACB0063F421 /* Assets.xcassets */,
 				A7208B9D2046CACB0063F421 /* LaunchScreen.storyboard */,
 				A7208BA02046CACB0063F421 /* Info.plist */,
 				A7208BA12046CACB0063F421 /* main.m */,
-				A7ECD736204821D700A7249B /* ListViewControler.h */,
-				A7ECD737204821D700A7249B /* ListViewControler.m */,
-				A7F05FD32049C9AE00D2D602 /* Generic.h */,
-				A7F05FD42049C9AE00D2D602 /* Generic.m */,
 			);
 			path = myapp;
 			sourceTree = "<group>";
@@ -166,6 +165,28 @@
 				A7208BC72046E3110063F421 /* Logo_TV_2015.png */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A75D40532050283D00CDCD73 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				A7208B952046CACB0063F421 /* ViewController.h */,
+				A7208B962046CACB0063F421 /* ViewController.m */,
+				A7ECD736204821D700A7249B /* ListViewControler.h */,
+				A7ECD737204821D700A7249B /* ListViewControler.m */,
+				A75D40552050298500CDCD73 /* GenericTableViewCell.h */,
+				A75D40562050690400CDCD73 /* GenericTableViewCell.m */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		A75D40542050288700CDCD73 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				A7F05FD32049C9AE00D2D602 /* Generic.h */,
+				A7F05FD42049C9AE00D2D602 /* Generic.m */,
+			);
+			path = models;
 			sourceTree = "<group>";
 		};
 		F582DFFA1812E4867D5C519B /* Pods */ = {
@@ -366,6 +387,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A7208B972046CACB0063F421 /* ViewController.m in Sources */,
+				A75D40572050690400CDCD73 /* GenericTableViewCell.m in Sources */,
 				A7F05FD52049C9AE00D2D602 /* Generic.m in Sources */,
 				A7ECD738204821D700A7249B /* ListViewControler.m in Sources */,
 				A7208BA22046CACB0063F421 /* main.m in Sources */,
