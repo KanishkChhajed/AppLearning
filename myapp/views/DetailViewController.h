@@ -12,11 +12,14 @@
 
 @class DetailViewController;
 
+@protocol DetailViewControllerDelegate <NSObject>
 
-@interface DetailViewController : UIViewController
+@end
+
+@interface DetailViewController : UIViewController <NSObject>
 
 @property Generic *country;
-
+@property (nonatomic, assign) id <DetailViewControllerDelegate> delegate;
 @property (weak,nonatomic) IBOutlet UITextField *countryName;
 @property (weak,nonatomic) IBOutlet UILabel *capitalCity;
 @property (weak,nonatomic) IBOutlet UILabel *lenguage;

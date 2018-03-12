@@ -11,8 +11,14 @@
 @implementation AddCountryViewController
 
 - (IBAction)addCountry{
+    Generic *generic = [Generic new];
+    generic.countryName = self.countrylabel.text;
+    generic.countryCapital = self.capitalcity.text;
+    generic.countryRegion = self.region.text;
+    generic.countryLenguage = self.language.text;
     
-    
+    [self.delegate addCountries:generic];
+    [self.navigationController popViewControllerAnimated:TRUE];
     
 }
 @end

@@ -7,10 +7,21 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Generic.h"
+@class AddCountryViewController;
 
-@interface AddCountryViewController : UIViewController
 
-@property (weak, nonatomic) IBOutlet UITextField *coutrylabel;
+
+@protocol AddCountryViewControllerDelegate <NSObject>
+
+- (void) addCountries:(Generic *) generic;
+
+@end
+
+@interface AddCountryViewController : UIViewController <NSObject>
+
+@property (nonatomic, assign) id <AddCountryViewControllerDelegate> delegate;
+@property (weak, nonatomic) IBOutlet UITextField *countrylabel;
 @property (weak, nonatomic) IBOutlet UITextField *capitalcity;
 @property (weak, nonatomic) IBOutlet UITextField *language;
 @property (weak, nonatomic) IBOutlet UITextField *region;
