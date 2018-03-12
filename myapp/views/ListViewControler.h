@@ -9,12 +9,12 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 #import "ViewController.h"
-
-@interface ListViewControler : UITableViewController <UITableViewDelegate, UITableViewDataSource> {
+#import "AddCountryViewController.h"
+@interface ListViewControler : UITableViewController <UITableViewDelegate, UITableViewDataSource,NSObject, AddCountryViewControllerDelegate> {
     
 }
 @property (nonatomic,strong) NSMutableArray *tableData;
 
-//- (IBAction)logout:(id)sender;
+- (IBAction)logout:(id)sender;
 
 @end

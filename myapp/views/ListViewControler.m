@@ -26,7 +26,7 @@
 
 - (void) loadData:(UITableView *) tableView{
     
-    NSString *URLString = @"https://restcountries.eu/rest/v2/all?fields=name;capital;lenguage;region;";
+    NSString *URLString = @"https://restcountries.eu/rest/v2/all?fields=name;capital;region;languages";
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
     [manager GET: URLString parameters:nil progress:nil success:^(NSURLSessionTask *task, id responseObject) {
         NSDictionary *myDictionary = responseObject;
@@ -39,7 +39,8 @@
             obj.countryName = [key objectForKey:@"name"];
             obj.countryCapital = [key objectForKey:@"capital"];
             obj.countryRegion = [key objectForKey:@"region"];
-            obj.countryLenguage = [[key objectForKey:@"languages"] objectForKey:@"name"];
+
+            obj.countryLenguage = [[[key objectForKey:@"languages"] valueForKey:@"nativeName"] objectAtIndex:0];
             [self.tableData addObject: obj];
         }
         [self.tableView reloadData];
@@ -82,6 +83,7 @@
 
 - (IBAction)addCountry:(id)sender {
     AddCountryViewController *country = [self.storyboard instantiateViewControllerWithIdentifier: @"countrys"];
+    country.delegate = self;
     [self.navigationController pushViewController:country animated:YES];
 }
 
@@ -95,17 +97,10 @@
 }
 
 
-// Modify the prepareForSegue method by
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    DetailViewController *detailController = segue.destinationViewController;
-    Generic *country = [self.tableData objectAtIndex:self.tableView.indexPathForSelectedRow.row];
-    detailController.country = country;
-}
-
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     Generic *generic = [tableData objectAtIndex:indexPath.row];
-    
-    NSLog(@"%@", generic.countryName);
+    DetailViewController *details = [self.storyboard instantiateViewControllerWithIdentifier: @"details"];
+    details.country = generic;
+    [self.navigationController pushViewController:details animated:YES];
 }
 @end
