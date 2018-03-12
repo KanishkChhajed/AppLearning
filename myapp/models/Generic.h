@@ -11,6 +11,9 @@
 @interface Generic : NSObject{
    
 }
-@property NSString *mystring1;
-@property NSString *mystring2;
+@property NSString *countryName;
+@property NSString *countryCapital;
+@property NSString *countryLenguage;
+@property NSString *countryRegion;
+
 @end

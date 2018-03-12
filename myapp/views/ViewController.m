@@ -2,8 +2,8 @@
 //  ViewController.m
 //  myapp
 //
-//  Created by Zuppers on 28/02/18.
-//  Copyright © 2018 Zuppers. All rights reserved.
+//  Created by José Victor on 28/02/18.
+//  Copyright © 2018 José Victor. All rights reserved.
 //
 
 #import "ViewController.h"
