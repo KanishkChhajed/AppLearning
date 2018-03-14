@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		1A1B28A52055708800E9C452 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A1B28A42055708800E9C452 /* DetailViewController.m */; };
 		A70063A820530E67007B596B /* AddCountryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A70063A720530E67007B596B /* AddCountryViewController.m */; };
-		A713D1AE2056F336009C1574 /* RegisterUser.m in Sources */ = {isa = PBXBuildFile; fileRef = A713D1AD2056F336009C1574 /* RegisterUser.m */; };
-		A713D1B120570540009C1574 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = A713D1B020570540009C1574 /* User.m */; };
 		A7208B942046CACB0063F421 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A7208B932046CACB0063F421 /* AppDelegate.m */; };
 		A7208B972046CACB0063F421 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7208B962046CACB0063F421 /* ViewController.m */; };
 		A7208B9A2046CACB0063F421 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7208B982046CACB0063F421 /* Main.storyboard */; };
@@ -50,10 +48,6 @@
 		7599BC0DE3A86CBA848AB31B /* Pods-myapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myapp.release.xcconfig"; path = "Pods/Target Support Files/Pods-myapp/Pods-myapp.release.xcconfig"; sourceTree = "<group>"; };
 		A70063A620530E67007B596B /* AddCountryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddCountryViewController.h; sourceTree = "<group>"; };
 		A70063A720530E67007B596B /* AddCountryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddCountryViewController.m; sourceTree = "<group>"; };
-		A713D1AC2056F336009C1574 /* RegisterUser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RegisterUser.h; sourceTree = "<group>"; };
-		A713D1AD2056F336009C1574 /* RegisterUser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RegisterUser.m; sourceTree = "<group>"; };
-		A713D1AF20570540009C1574 /* User.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
-		A713D1B020570540009C1574 /* User.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 		A7208B8F2046CACB0063F421 /* myapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7208B922046CACB0063F421 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A7208B932046CACB0063F421 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -192,8 +186,6 @@
 				A70063A720530E67007B596B /* AddCountryViewController.m */,
 				1A1B28A32055708800E9C452 /* DetailViewController.h */,
 				1A1B28A42055708800E9C452 /* DetailViewController.m */,
-				A713D1AC2056F336009C1574 /* RegisterUser.h */,
-				A713D1AD2056F336009C1574 /* RegisterUser.m */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -203,8 +195,6 @@
 			children = (
 				A7F05FD32049C9AE00D2D602 /* Generic.h */,
 				A7F05FD42049C9AE00D2D602 /* Generic.m */,
-				A713D1AF20570540009C1574 /* User.h */,
-				A713D1B020570540009C1574 /* User.m */,
 			);
 			path = models;
 			sourceTree = "<group>";
@@ -406,10 +396,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A713D1B120570540009C1574 /* User.m in Sources */,
 				A7208B972046CACB0063F421 /* ViewController.m in Sources */,
 				A75D40572050690400CDCD73 /* GenericTableViewCell.m in Sources */,
-				A713D1AE2056F336009C1574 /* RegisterUser.m in Sources */,
 				A7F05FD52049C9AE00D2D602 /* Generic.m in Sources */,
 				1A1B28A52055708800E9C452 /* DetailViewController.m in Sources */,
 				A7ECD738204821D700A7249B /* ListViewControler.m in Sources */,
