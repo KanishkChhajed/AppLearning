@@ -24,6 +24,15 @@
 //}
 // https://restcountries.eu/rest/v2/all?fields=name
 
+
+- (void)viewDidLoad{
+    
+    self.navigationItem.leftBarButtonItem = self.editButtonItem;
+    self.tableData = [NSMutableArray new];
+    [self loadData: self.tableView];
+    [super viewDidLoad];
+}
+
 - (void) loadData:(UITableView *) tableView{
     
     NSString *URLString = @"https://restcountries.eu/rest/v2/all?fields=name;capital;region;languages";
@@ -49,13 +58,6 @@
         NSLog(@"Error: %@", error);
     }];
 }
-
-- (void)viewDidLoad{
-    self.tableData = [NSMutableArray new];
-    [self loadData: self.tableView];
-    [super viewDidLoad];
-}
-
 
 - (void)viewDidAppear:(BOOL)animated{
     
@@ -103,4 +105,14 @@
     details.country = generic;
     [self.navigationController pushViewController:details animated:YES];
 }
+
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (editingStyle == UITableViewCellEditingStyleDelete) {
+        [tableData removeObjectAtIndex:indexPath.row];
+        [tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
+    }
+}
+
+
 @end

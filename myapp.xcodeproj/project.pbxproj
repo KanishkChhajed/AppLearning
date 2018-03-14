@@ -18,6 +18,7 @@
 		A7208BAC2046CACB0063F421 /* myappTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A7208BAB2046CACB0063F421 /* myappTests.m */; };
 		A7208BB72046CACB0063F421 /* myappUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A7208BB62046CACB0063F421 /* myappUITests.m */; };
 		A7208BC82046E3110063F421 /* Logo_TV_2015.png in Resources */ = {isa = PBXBuildFile; fileRef = A7208BC72046E3110063F421 /* Logo_TV_2015.png */; };
+		A734566F205956A6004B1E6F /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = A734566D205956A6004B1E6F /* User.m */; };
 		A75D40572050690400CDCD73 /* GenericTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A75D40562050690400CDCD73 /* GenericTableViewCell.m */; };
 		A7ECD738204821D700A7249B /* ListViewControler.m in Sources */ = {isa = PBXBuildFile; fileRef = A7ECD737204821D700A7249B /* ListViewControler.m */; };
 		A7F05FD52049C9AE00D2D602 /* Generic.m in Sources */ = {isa = PBXBuildFile; fileRef = A7F05FD42049C9AE00D2D602 /* Generic.m */; };
@@ -65,6 +66,8 @@
 		A7208BB62046CACB0063F421 /* myappUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = myappUITests.m; sourceTree = "<group>"; };
 		A7208BB82046CACB0063F421 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A7208BC72046E3110063F421 /* Logo_TV_2015.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Logo_TV_2015.png; sourceTree = "<group>"; };
+		A734566D205956A6004B1E6F /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		A734566E205956A6004B1E6F /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
 		A75D40552050298500CDCD73 /* GenericTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GenericTableViewCell.h; sourceTree = "<group>"; };
 		A75D40562050690400CDCD73 /* GenericTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GenericTableViewCell.m; sourceTree = "<group>"; };
 		A7ECD736204821D700A7249B /* ListViewControler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ListViewControler.h; sourceTree = "<group>"; };
@@ -193,6 +196,8 @@
 		A75D40542050288700CDCD73 /* models */ = {
 			isa = PBXGroup;
 			children = (
+				A734566E205956A6004B1E6F /* User.h */,
+				A734566D205956A6004B1E6F /* User.m */,
 				A7F05FD32049C9AE00D2D602 /* Generic.h */,
 				A7F05FD42049C9AE00D2D602 /* Generic.m */,
 			);
@@ -398,6 +403,7 @@
 			files = (
 				A7208B972046CACB0063F421 /* ViewController.m in Sources */,
 				A75D40572050690400CDCD73 /* GenericTableViewCell.m in Sources */,
+				A734566F205956A6004B1E6F /* User.m in Sources */,
 				A7F05FD52049C9AE00D2D602 /* Generic.m in Sources */,
 				1A1B28A52055708800E9C452 /* DetailViewController.m in Sources */,
 				A7ECD738204821D700A7249B /* ListViewControler.m in Sources */,
