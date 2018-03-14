@@ -10,8 +10,7 @@
 #import "AFNetworking.h"
 #import "Generic.h"
 #import "GenericTableViewCell.h"
-#import "AddCountryViewController.h"
-#import "DetailViewController.h"
+
 
 @implementation ListViewControler
 
@@ -23,6 +22,8 @@
 //    [self.navigationController popToRootViewControllerAnimated: TRUE];
 //}
 // https://restcountries.eu/rest/v2/all?fields=name
+
+
 
 
 - (void)viewDidLoad{
@@ -48,8 +49,8 @@
             obj.countryName = [key objectForKey:@"name"];
             obj.countryCapital = [key objectForKey:@"capital"];
             obj.countryRegion = [key objectForKey:@"region"];
-
             obj.countryLenguage = [[[key objectForKey:@"languages"] valueForKey:@"nativeName"] objectAtIndex:0];
+            obj.rating = 3;
             [self.tableData addObject: obj];
         }
         [self.tableView reloadData];

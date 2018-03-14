@@ -9,21 +9,24 @@
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
 #import "Generic.h"
+#import "RateView.h"
 
 @class DetailViewController;
 
-@protocol DetailViewControllerDelegate <NSObject>
+@protocol DetailViewDelegate <NSObject>
+
+-(void) evaluateCountry: (float) rating;
 
 @end
 
-@interface DetailViewController : UIViewController <NSObject>
+@interface DetailViewController : UIViewController <NSObject, RateViewDelegate>
 
 @property Generic *country;
-@property (nonatomic, assign) id <DetailViewControllerDelegate> delegate;
 @property (weak,nonatomic) IBOutlet UITextField *countryName;
 @property (weak,nonatomic) IBOutlet UILabel *capitalCity;
 @property (weak,nonatomic) IBOutlet UILabel *lenguage;
 @property (weak,nonatomic) IBOutlet UILabel *region;
-
+@property (weak, nonatomic) IBOutlet RateView *rateView;
+@property (nonatomic, assign) id <DetailViewDelegate> delegate;
 
 @end

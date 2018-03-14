@@ -19,6 +19,10 @@
 		A7208BB72046CACB0063F421 /* myappUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A7208BB62046CACB0063F421 /* myappUITests.m */; };
 		A7208BC82046E3110063F421 /* Logo_TV_2015.png in Resources */ = {isa = PBXBuildFile; fileRef = A7208BC72046E3110063F421 /* Logo_TV_2015.png */; };
 		A734566F205956A6004B1E6F /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = A734566D205956A6004B1E6F /* User.m */; };
+		A734567220596573004B1E6F /* RateView.m in Sources */ = {isa = PBXBuildFile; fileRef = A734567120596573004B1E6F /* RateView.m */; };
+		A73456762059713E004B1E6F /* ICC_emptyStar_2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A73456732059713E004B1E6F /* ICC_emptyStar_2x.png */; };
+		A73456772059713E004B1E6F /* ICC_filledStar_2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A73456742059713E004B1E6F /* ICC_filledStar_2x.png */; };
+		A73456782059713E004B1E6F /* ICC_highlightedStar_2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A73456752059713E004B1E6F /* ICC_highlightedStar_2x.png */; };
 		A75D40572050690400CDCD73 /* GenericTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A75D40562050690400CDCD73 /* GenericTableViewCell.m */; };
 		A7ECD738204821D700A7249B /* ListViewControler.m in Sources */ = {isa = PBXBuildFile; fileRef = A7ECD737204821D700A7249B /* ListViewControler.m */; };
 		A7F05FD52049C9AE00D2D602 /* Generic.m in Sources */ = {isa = PBXBuildFile; fileRef = A7F05FD42049C9AE00D2D602 /* Generic.m */; };
@@ -68,6 +72,11 @@
 		A7208BC72046E3110063F421 /* Logo_TV_2015.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Logo_TV_2015.png; sourceTree = "<group>"; };
 		A734566D205956A6004B1E6F /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 		A734566E205956A6004B1E6F /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		A734567020596573004B1E6F /* RateView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RateView.h; sourceTree = "<group>"; };
+		A734567120596573004B1E6F /* RateView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RateView.m; sourceTree = "<group>"; };
+		A73456732059713E004B1E6F /* ICC_emptyStar_2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ICC_emptyStar_2x.png; sourceTree = "<group>"; };
+		A73456742059713E004B1E6F /* ICC_filledStar_2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ICC_filledStar_2x.png; sourceTree = "<group>"; };
+		A73456752059713E004B1E6F /* ICC_highlightedStar_2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ICC_highlightedStar_2x.png; sourceTree = "<group>"; };
 		A75D40552050298500CDCD73 /* GenericTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GenericTableViewCell.h; sourceTree = "<group>"; };
 		A75D40562050690400CDCD73 /* GenericTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GenericTableViewCell.m; sourceTree = "<group>"; };
 		A7ECD736204821D700A7249B /* ListViewControler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ListViewControler.h; sourceTree = "<group>"; };
@@ -171,6 +180,9 @@
 		A7208BC62046E2CD0063F421 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A73456742059713E004B1E6F /* ICC_filledStar_2x.png */,
+				A73456732059713E004B1E6F /* ICC_emptyStar_2x.png */,
+				A73456752059713E004B1E6F /* ICC_highlightedStar_2x.png */,
 				A7208BC72046E3110063F421 /* Logo_TV_2015.png */,
 			);
 			path = "Supporting Files";
@@ -189,6 +201,8 @@
 				A70063A720530E67007B596B /* AddCountryViewController.m */,
 				1A1B28A32055708800E9C452 /* DetailViewController.h */,
 				1A1B28A42055708800E9C452 /* DetailViewController.m */,
+				A734567020596573004B1E6F /* RateView.h */,
+				A734567120596573004B1E6F /* RateView.m */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -322,9 +336,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A73456782059713E004B1E6F /* ICC_highlightedStar_2x.png in Resources */,
 				A7208BC82046E3110063F421 /* Logo_TV_2015.png in Resources */,
 				A7208B9F2046CACB0063F421 /* LaunchScreen.storyboard in Resources */,
 				A7208B9C2046CACB0063F421 /* Assets.xcassets in Resources */,
+				A73456772059713E004B1E6F /* ICC_filledStar_2x.png in Resources */,
+				A73456762059713E004B1E6F /* ICC_emptyStar_2x.png in Resources */,
 				A7208B9A2046CACB0063F421 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -409,6 +426,7 @@
 				A7ECD738204821D700A7249B /* ListViewControler.m in Sources */,
 				A70063A820530E67007B596B /* AddCountryViewController.m in Sources */,
 				A7208BA22046CACB0063F421 /* main.m in Sources */,
+				A734567220596573004B1E6F /* RateView.m in Sources */,
 				A7208B942046CACB0063F421 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

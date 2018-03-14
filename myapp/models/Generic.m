@@ -11,6 +11,4 @@
 
 @implementation Generic
 
-@synthesize description;
-
 @end

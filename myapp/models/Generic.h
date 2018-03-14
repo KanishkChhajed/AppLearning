@@ -11,9 +11,10 @@
 @interface Generic : NSObject{
    
 }
-@property NSString *countryName;
-@property NSString *countryCapital;
-@property NSString *countryLenguage;
-@property NSString *countryRegion;
+@property (strong) NSString *countryName;
+@property (strong) NSString *countryCapital;
+@property (strong) NSString *countryLenguage;
+@property (strong) NSString *countryRegion;
+@property (assign) float rating;
 
 @end

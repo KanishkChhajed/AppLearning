@@ -10,7 +10,9 @@
 #import <UIKit/UIKit.h>
 #import "ViewController.h"
 #import "AddCountryViewController.h"
-@interface ListViewControler : UITableViewController <UITableViewDelegate, UITableViewDataSource,NSObject, AddCountryViewControllerDelegate> {
+#import "DetailViewController.h"
+
+@interface ListViewControler : UITableViewController <UITableViewDelegate, UITableViewDataSource,NSObject, AddCountryViewControllerDelegate, DetailViewDelegate> {
     
 }
 @property (nonatomic,strong) NSMutableArray *tableData;

@@ -273,7 +273,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TnY-oc-2fM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1637" y="133"/>
+            <point key="canvasLocation" x="2030" y="133"/>
         </scene>
         <!--Add Country-->
         <scene sceneID="skV-kt-WR0">
@@ -381,7 +381,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lv7-gT-FxY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1637" y="949"/>
+            <point key="canvasLocation" x="2031" y="949"/>
         </scene>
         <!--Details-->
         <scene sceneID="lCx-Tf-H5o">
@@ -392,7 +392,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9pI-ca-NiL">
-                                <rect key="frame" x="16" y="184" width="343" height="299"/>
+                                <rect key="frame" x="16" y="162" width="343" height="248"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sa1-0b-RPh">
                                         <rect key="frame" x="146" y="157" width="189" height="21"/>
@@ -467,12 +467,19 @@
                                     <constraint firstItem="KLe-ui-U8B" firstAttribute="leading" secondItem="rzV-CN-ggz" secondAttribute="trailing" constant="8" symbolic="YES" id="zzu-8b-UPJ"/>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="93w-zE-DA4" customClass="RateView">
+                                <rect key="frame" x="16" y="425" width="343" height="64"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="9pI-ca-NiL" firstAttribute="leading" secondItem="BPw-i2-kkX" secondAttribute="leadingMargin" id="0AC-6k-865"/>
-                            <constraint firstItem="9pI-ca-NiL" firstAttribute="centerY" secondItem="BPw-i2-kkX" secondAttribute="centerY" id="5Js-Kx-kdX"/>
-                            <constraint firstItem="9pI-ca-NiL" firstAttribute="top" secondItem="Czj-Ee-DPN" secondAttribute="top" constant="120" id="LU0-0Y-Y0c"/>
+                            <constraint firstItem="9pI-ca-NiL" firstAttribute="centerY" secondItem="BPw-i2-kkX" secondAttribute="centerY" constant="-47.5" id="5Js-Kx-kdX"/>
+                            <constraint firstItem="93w-zE-DA4" firstAttribute="trailing" secondItem="9pI-ca-NiL" secondAttribute="trailing" id="7z3-oa-RvD"/>
+                            <constraint firstItem="9pI-ca-NiL" firstAttribute="top" secondItem="Czj-Ee-DPN" secondAttribute="top" constant="98" id="LU0-0Y-Y0c"/>
+                            <constraint firstItem="93w-zE-DA4" firstAttribute="leading" secondItem="9pI-ca-NiL" secondAttribute="leading" id="Qi4-f0-rlu"/>
+                            <constraint firstItem="Czj-Ee-DPN" firstAttribute="bottom" secondItem="93w-zE-DA4" secondAttribute="bottom" constant="134" id="X54-Lp-wM5"/>
+                            <constraint firstItem="93w-zE-DA4" firstAttribute="top" secondItem="9pI-ca-NiL" secondAttribute="bottom" constant="15" id="ey9-YV-YgM"/>
                             <constraint firstItem="9pI-ca-NiL" firstAttribute="trailing" secondItem="BPw-i2-kkX" secondAttribute="trailingMargin" id="whv-iX-La4"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Czj-Ee-DPN"/>
@@ -481,13 +488,14 @@
                         <outlet property="capitalCity" destination="KLe-ui-U8B" id="Qc6-gW-dUQ"/>
                         <outlet property="countryName" destination="fJT-y5-no4" id="INd-hL-DCS"/>
                         <outlet property="lenguage" destination="Sa1-0b-RPh" id="3aV-OF-FtP"/>
+                        <outlet property="rateView" destination="93w-zE-DA4" id="YRy-gk-AjP"/>
                         <outlet property="region" destination="An4-lS-sBG" id="ODM-gY-SS1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aTN-jJ-7Hd" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="dhL-SD-IY2" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2225" y="133"/>
+            <point key="canvasLocation" x="2844" y="132.68365817091455"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="U3W-IB-q4F">
@@ -509,7 +517,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="F4L-RG-dOG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1031" y="133"/>
+            <point key="canvasLocation" x="1206" y="133"/>
         </scene>
     </scenes>
     <resources>
