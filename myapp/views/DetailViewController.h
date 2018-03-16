@@ -15,13 +15,12 @@
 
 @protocol DetailViewDelegate <NSObject>
 
--(void) evaluateCountry: (float) rating;
 
 @end
 
 @interface DetailViewController : UIViewController <NSObject, RateViewDelegate>
 
-@property Generic *country;
+@property (strong,nonatomic) Generic *country;
 @property (weak,nonatomic) IBOutlet UITextField *countryName;
 @property (weak,nonatomic) IBOutlet UILabel *capitalCity;
 @property (weak,nonatomic) IBOutlet UILabel *lenguage;
